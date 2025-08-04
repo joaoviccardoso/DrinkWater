@@ -1,0 +1,14 @@
+.container-header{
+    display: flex;
+    background-color: #01579B;
+    width: 100vw;
+}
+
+.container-header h1{
+    font-family: "Inter", sans-serif;
+    color: #fff;
+}
+
+.container-header img{
+    width: 80px;
+}
