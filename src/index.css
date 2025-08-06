@@ -6,3 +6,9 @@ body {
   background-color: #E0F7FA;
 }
 
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+

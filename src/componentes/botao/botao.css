@@ -1,0 +1,9 @@
+.btn-quantidade{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 16px;
+    background-color: #0288D1;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+}
