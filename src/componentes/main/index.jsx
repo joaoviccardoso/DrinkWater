@@ -3,14 +3,28 @@ import Botao from '../botao';
 import { useState } from 'react';
 
 function Main(){
-    const [contador, setContador] = useState(0);
+    const [contador, setContador] = useState( () => {
+        const valorSalvoNoLocalStorage = localStorage.getItem('contador');
+        return valorSalvoNoLocalStorage ? parseFloat(valorSalvoNoLocalStorage) : 0;
+    });
 
     function adicionarValor(valor){
-       setContador(contador + valor)
+        const novoValor = contador + valor
+        setContador(novoValor)
+        localStorage.setItem('contador', novoValor)
     }
 
     function tirarValor(valor){
-        setContador(contador - valor)
+        if(contador - valor >= 0){
+            const novoValor = contador - valor
+            setContador(novoValor)
+            localStorage.setItem('contador', novoValor)
+        }
+    }
+
+    function resetar(valor){
+        setContador(valor)
+        localStorage.setItem('contador', valor)
     }
 
     return(
@@ -21,7 +35,7 @@ function Main(){
                 <Botao
                     className="btn-resetar"
                     texto="Resetar"
-                    onClick={() => setContador(0)}
+                    onClick={() => resetar(0)}
                 />
             </div>
             <div className='container-btns'>
