@@ -1,8 +1,8 @@
 import './botao.css'
 
-function botao({texto}){
+function botao({className ,texto, onClick}){
     return(
-        <button className='btn-quantidade'> 
+        <button className={className} onClick={onClick}> 
             {texto}
         </button>
     )

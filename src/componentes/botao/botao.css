@@ -1,4 +1,4 @@
-.btn-quantidade{
+.btn-quantidade, .btn-quantidade-tirar{
     width: 150px;
     height: 40px;
     border: none;
@@ -7,3 +7,17 @@
     font-family: "Inter", sans-serif;
     color: #fff;
 }
+
+.btn-quantidade-tirar{
+    background-color: #014a72;
+}
+
+.btn-resetar{
+    width: 80px;
+    height: 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #c51700;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+}   
