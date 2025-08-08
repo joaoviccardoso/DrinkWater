@@ -2,6 +2,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+.container-meta{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 1.5rem;
+}
+
+h3{
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #2d2d2d;
+  text-align: center;
 }
 
 .barra {
@@ -16,4 +31,35 @@
   background: #4cafef;
   height: 100%;
   transition: width 0.3s ease;
+}
+
+.salvarMeta {
+    background-color: #0077b6;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.salvarMeta:hover {
+    background-color: #0096c7;
+}
+
+.definirMeta {
+    padding: 8px 12px;
+    border: 2px solid #0077b6;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    text-align: center;
+    width: 150px;
+    transition: 0.3s;
+}
+
+.definirMeta:focus {
+    border-color: #0096c7;
+    box-shadow: 0 0 5px rgba(0, 150, 199, 0.4);
 }
