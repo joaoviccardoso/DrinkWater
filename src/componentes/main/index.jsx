@@ -1,5 +1,6 @@
 import './main.css';
 import Botao from '../botao';
+import Barra from '../barra';
 import { useState } from 'react';
 
 function Main(){
@@ -68,6 +69,11 @@ function Main(){
                     className="btn-quantidade-tirar"
                     texto="-700ml" 
                     onClick={() => tirarValor(700)}
+                />
+            </div>
+            <div className='container-barra'>
+                <Barra
+                    contador={contador}
                 />
             </div>
         </div>

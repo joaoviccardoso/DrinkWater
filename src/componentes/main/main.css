@@ -36,3 +36,8 @@
     justify-content: center;
     gap: 1.5rem;
 }
+
+.container-barra{
+    margin-top: 1rem;
+    width: 100%;
+}
